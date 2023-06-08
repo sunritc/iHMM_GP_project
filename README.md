@@ -1,5 +1,5 @@
 # iHMM_GP
-Contains relevant codes for the paper "Scalable nonparametric Bayesian learning for dynamic velocity fields"
+Contains relevant codes for the paper "Scalable nonparametric Bayesian learning for dynamic velocity fields" (UAI 2023).
 
 From complex heterogenous spatio-temporal data like traffic or ocean/wind current, this model can efficiently extract spatial and temporal patterns without knowledge of number of components in an unsupervised manner. We view each such pattern as a distinct vector field, and this latent field changes across time where the temporal dynamics is assumed Markovian - the observations are believed to be noisy data from these latent fields at specific spatial locations, where we allow the number of observations (and their positions) at different time points to be different. We use Gaussian process for the spatial patterns and infinite Hidden Markov Model for the temporal dynamics. For inference, we propose a novel two pass algorithm, based on sequential greedy MAP estimation, to be able to analyze a large amount of data through our complex nonparametric model in reasonable time. For further speeding up the inference process, we use Sparse Gaussian Process with fixed inducing points in place of usual Gaussian process. 
 
