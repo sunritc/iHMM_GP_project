@@ -5,12 +5,12 @@ From complex heterogenous spatio-temporal data like traffic or ocean/wind curren
 
 Below is an example from NGSIM data (https://www.fhwa.dot.gov/publications/research/operations/07029/index.cfm) - which demonstrates the abstraction we employ, starting from the actual intersection image (left) to real observations at a fixed time (right) - the third figure is one of the estimated vector fields, which we believe underlies the time point in the right-most figure.
 
-<img src="plots/abstraction.jpeg" width="1000" height="400">
+<img src="images/abstraction.jpeg" width="1000" height="400">
 
 Here are a few of the extracted patterns along with their temporal dynamics (100 step transition probabilities) - see paper for further details. Notice that they capture different types of traffic flow patterns.
 
 <p align="center">
-<img src="plots/ngsim_patterns.jpg" width="500" height="600">
+<img src="images/ngsim_patterns.jpg" width="500" height="600">
 </p>
 
 The folder iHMM_GP contains all the relevant codes. In particular
